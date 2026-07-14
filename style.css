@@ -1,0 +1,493 @@
+
+
+/* ===========================
+        GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+        RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    line-height: 1.7;
+    position: relative;
+    overflow-x: hidden;
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.65),
+            rgba(0,0,0,0.65)
+        ),
+        url("images/library.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: -2;
+}
+
+section{
+    padding:90px 10%;
+    background:transparent;
+}
+
+
+
+h2{
+    font-size:2.4rem;
+    margin-bottom:20px;
+}
+
+/* ===========================
+        NAVBAR
+=========================== */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    background: #1E3A8A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+}
+
+.logo{
+    color:white;
+    font-size:2rem;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#FBBF24;
+}
+
+.join-btn{
+    text-decoration:none;
+    color:white;
+    background:#F59E0B;
+    padding:12px 22px;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.join-btn:hover{
+    transform:translateY(-3px);
+    background:#d97706;
+}
+
+/* ===========================
+        HERO
+=========================== */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    min-height:90vh;
+}
+
+.hero-left,
+.hero-right{
+    flex:1;
+}
+
+.hero h1{
+    font-size:3.8rem;
+    line-height:1.2;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:1.15rem;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:8px;
+    background:#1E3A8A;
+    color:white;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.secondary{
+    background:#F59E0B;
+}
+
+/* ===========================
+        ABOUT
+=========================== */
+
+.about{
+    display:flex;
+    gap:70px;
+    align-items:center;
+}
+
+.about-left,
+.about-right{
+    flex:1;
+}
+
+.about p{
+    margin:25px 0;
+}
+
+/* ===========================
+        BOOKS
+=========================== */
+
+.books{
+    text-align:center;
+}
+
+.book-grid{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:30px;
+}
+
+.book-card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.book-card:hover{
+    transform:translateY(-10px);
+}
+
+.book-card h3{
+    margin:18px 0 10px;
+}
+
+/* ===========================
+        EVENTS
+=========================== */
+
+.events{
+    display:flex;
+    gap:60px;
+    align-items:center;
+}
+
+.events-left{
+    flex:1;
+}
+
+.events-right{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.event-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.event-card:hover{
+    transform:translateX(10px);
+}
+
+/* ===========================
+        WHY JOIN
+=========================== */
+
+.why{
+    text-align:center;
+}
+
+.why-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.why-card{
+    background:white;
+    padding:35px 25px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+}
+
+.why-card i{
+    font-size:45px;
+    color:#1E3A8A;
+    margin-bottom:20px;
+}
+
+/* ===========================
+        TEAM
+=========================== */
+
+
+
+/* ===========================
+        TESTIMONIALS
+=========================== */
+
+.testimonials{
+    text-align:center;
+}
+
+.testimonial-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:50px;
+}
+
+.testimonial{
+    width:320px;
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    font-style:italic;
+}
+
+/* ===========================
+        CONTACT
+=========================== */
+
+.contact{
+    display:flex;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.contact-left,
+.contact-right{
+    flex:1;
+}
+
+.contact-left p{
+    margin:20px 0;
+}
+
+.contact-left i{
+    color:#1E3A8A;
+    margin-right:10px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-family:Poppins;
+    outline:none;
+}
+
+button{
+    padding:15px;
+    border:none;
+    background:#1E3A8A;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+}
+
+button:hover{
+    background:#15306d;
+}
+
+/* ===========================
+        FOOTER
+=========================== */
+
+footer{
+    background:#1E3A8A;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* ===========================
+        IMAGES
+=========================== */
+
+img{
+    width:100%;
+    border-radius:18px;
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero,
+    .about,
+    .events,
+    .contact{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+}
+
+.team{
+    text-align: center;
+}
+
+.team-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.member{
+    width: 300px;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-top: 5px solid #1E3A8A;
+    transition: 0.3s;
+}
+
+.member:hover{
+    transform: translateY(-8px);
+}
+
+.member h3{
+    color: #1E3A8A;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.member p{
+    color: #64748b;
+    font-size: 16px;
+}
+
+
+h1,h2,h3{
+    color:white;
+}
+
+p{
+    color:#e2e8f0;
+}
+
+.book-card p,
+.event-card p,
+.member p,
+.why-card p,
+.testimonial p{
+    color: #334155;
+}
+
+.book-card h3,
+.event-card h3,
+.member h3,
+.why-card h3{
+    color:#1e293b;
+}
+
+input,
+textarea{
+    color:#1e293b;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#64748b;
+}
+
